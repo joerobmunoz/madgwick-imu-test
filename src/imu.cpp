@@ -267,7 +267,7 @@ void getIMUdata(ImuFiltered *gyroState, float dt) {
   MagY_prev = MagY;
   MagZ_prev = MagZ;
 
-  Madgwick(GyroX, -GyroY, -GyroZ, -AccX, AccY, AccZ, MagY, -MagX, MagZ, dt, gyroState);
+  // Madgwick(GyroX, -GyroY, -GyroZ, -AccX, AccY, AccZ, MagY, -MagX, MagZ, dt, gyroState);
 }
 
 void calculate_IMU_error()
